@@ -1,0 +1,12 @@
+PRACTICAL 1 - Compilation stages (run these in the Ubuntu terminal)
+
+vi A.c                      -> write the Hello World program
+cpp A.c > A.i               -> Preprocessing  : A.c -> A.i (extended source code)
+gcc -S A.i -o A.s           -> Compilation    : A.i -> A.s (assembly code)
+as A.s -o A.o               -> Assembly       : A.s -> A.o (object code)
+gcc A.o -o A.exe            -> Linking        : A.o -> A.exe (executable)
+./A.exe                     -> Loading + Execution
+
+Same steps for supp1.c, supp2.c, supp3.c (replace A with the file name).
+
+Windows: open A.c in Turbo C / Code::Blocks and use Build & Run.
